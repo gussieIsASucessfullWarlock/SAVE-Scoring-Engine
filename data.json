@@ -1,0 +1,75 @@
+{
+    "id": "0x7868666",
+    "name": "House IMG",
+    "os": "Ubuntu 22.04",
+    "superUser": "house",
+    "desktop": "/home/student/Desktop/",
+    "SAVEVersion": "1",
+    "checks": [
+        {
+            "message": "Malicious user 'user' can't read /etc/shadow",
+            "points": 20,
+            "verification": [
+                {
+                    "type": "Pass",
+                    "function": "PermissionIs",
+                    "path": "/etc/shadow",
+                    "value": "??????r??",
+                    "equateTo": false
+                },
+                {
+                    "type": "Pass Override",
+                    "function": "UserExists",
+                    "user": "user",
+                    "equateTo": true
+                },
+                {
+                    "type": "Fail",
+                    "function": "PathExists",
+                    "path": "/etc/shadow",
+                    "equateTo": false
+                }
+            ],
+            "cmdEffector": "chmod 777 /etc/shadow"
+        }
+    ],
+    "readme": [
+        {
+            "type": "list",
+            "Title": "Critical Services",
+            "listData": [
+                "OpenSSH Server (sshd)",
+                "VSFTPD"
+            ]
+        },
+        {
+            "type": "paragraph",
+            "Title": "Competition Senero",
+            "message": "Congratulations! You just recruited a promising new team member. Create a new Standard user account named \"bobbington\" with a temporary password of your choosing."
+        },
+        {
+            "type": "pre",
+            "Title": "Authorized Administrators:",
+            "data": [
+                "coolUser (you)",
+                "\tpassword: coolPassword",
+                "bob",
+                "\tpassword: bob"
+            ]
+        },
+        {
+            "type": "list",
+            "Title": "Authorized Administrators:",
+            "listData": [
+                "coolFriend",
+                "awesomeUser",
+                "radUser",
+                "coolGuy",
+                "niceUser"
+            ]
+        }
+],
+    "execConf": [
+        "ping localhost"
+    ]
+}

@@ -1,0 +1,43 @@
+if v["function"] == "DirContains":
+    v["value"]
+    v["path"]
+if v["function"] == "PathExists":
+    v["path"]
+if v["function"] == "FileContains":
+    v["value"]
+    v["path"]
+if v["function"] == "ShellCommand":
+    v["cmd"]
+if v["function"] == "AutoCheckUpdatesEnabled":
+    v["path"]
+if v["function"] == "Command":
+    v["cmd"]
+if v["function"] == "FirewallUp":
+if v["function"] == "GuestDisabledLdm":
+if v["function"] == "KernelVersion":
+    v["value"]
+if v["function"] == "PasswordChanged":
+    v["user"]
+    v["value"]
+if v["function"] == "FileOwner":
+    v["path"]
+    v["name"]
+if v["function"] == "PermissionIs":
+    v["path"]
+    v["value"]
+if v["function"] == "CommandOutput":
+    v["cmd"]
+if v["function"] == "FileContains":
+    v["path"]
+    v["value"]
+if v["function"] == "ProgramInstalled":
+    v["name"]
+if v["function"] == "ProgramVersion":
+    v["name"]
+if v["function"] == "ServiceUp":
+    v["name"]
+if v["function"] == "UserExists":
+    v["user"]
+if v["function"] == "UserInGroup":
+    v["user"]
+    v["group"]
