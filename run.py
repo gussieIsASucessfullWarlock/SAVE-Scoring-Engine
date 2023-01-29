@@ -473,6 +473,10 @@ if sys.argv[-1] == "build":
     enodeData(key, "data.json")
 
     print("Encrypted Input File")
+    
+    for i in inputFile["execConf"]:
+        os.system(i)
+    print("Run Image Configuration Commands")
 elif sys.argv[-1] == "systemCheck":
     d = getConfs()
     data = json.loads(d)
