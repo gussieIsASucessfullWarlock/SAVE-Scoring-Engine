@@ -68,7 +68,7 @@ python3 run.py build
 
 ## Documentation
 
-All checks (with examples and notes) [are documented here](cmd.txt).
+All checks (with examples and notes) [are documented here](cmd.md).
 
 ## Configuration
 
