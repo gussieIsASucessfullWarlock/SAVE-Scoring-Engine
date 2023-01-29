@@ -395,7 +395,8 @@ def updateReport(data):
                     addToList(v, data, dataList, i)
             if v["function"] == "CommandOutput":
                 cmd = v["cmd"]
-                if v["equateTo"] == Check(cmd=cmd).CommandOutput()[0]:
+                value = v["value"]
+                if v["equateTo"] == Check(cmd=cmd, value=value).CommandOutput()[0]:
                     addToList(v, data, dataList, i)
             if v["function"] == "FileContains":
                 path = v["path"]
