@@ -106,8 +106,7 @@ The configuration is written in JSON. Here is a minimal example:
                     "path": "/etc/shadow",
                     "equateTo": false
                 }
-            ],
-            "cmdEffector": "chmod 777 /etc/shadow"
+            ]
         }
     ],
     "readme": [
